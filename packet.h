@@ -59,8 +59,7 @@ public:
     return *this;
   }
 
-  //basic get functions defined inline, more invlolved/lengthy ones have been moved to packet.cpp
-  // couldnt figure out how to properly compile with packet.cpp moved back here lol
+  
   bool retHasSent() { return hasBeeenSent; }
   bool retHasBeenAcked() { return acked; }
   uint16_t retLengVal() { return header.payloadLen; }
